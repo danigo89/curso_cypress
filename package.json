@@ -1,0 +1,23 @@
+{
+  "name": "curso_cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigo89/curso_cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danigo89/curso_cypress/issues"
+  },
+  "homepage": "https://github.com/danigo89/curso_cypress#readme",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.1.0"
+  }
+}
