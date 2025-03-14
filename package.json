@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "limpiar-reporte": "rimraf ./allure-results ./allure-report",
+    "ejecutar-pruebas": "cypress run --headed --env allure=true",
+    "generar-reporte": "allure generate allure-results -o allure-report --clean",
+    "abrir-reporte": "allure open",
+    "test": "npm run limpiar-reporte && npm run ejecutar-pruebas && npm run generar-reporte && npm run abrir-reporte"
   },
   "repository": {
     "type": "git",
@@ -18,6 +22,11 @@
   "homepage": "https://github.com/danigo89/curso_cypress#readme",
   "description": "",
   "devDependencies": {
-    "cypress": "^14.1.0"
+    "allure-commandline": "^2.29.0",
+    "cypress": "^12.13.0"
+  },
+  "dependencies": {
+    "@mmisty/cypress-allure-adapter": "^3.2.3",
+    "@shelex/cypress-allure-plugin": "^2.40.2"
   }
 }
