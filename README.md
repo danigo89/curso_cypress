@@ -1,3 +1,3 @@
 
 
-#   Cuando descargue el prouyecto ejecute "npm install" para descargar los apquetes necesarios (nodemodules)
+#   Cuando descargue el proyecto ejecute "npm install" para descargar los paquetes necesarios (nodemodules)
