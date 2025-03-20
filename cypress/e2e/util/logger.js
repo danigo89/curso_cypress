@@ -28,7 +28,13 @@ export class Logger{
     
     //Logueamos la Sub-Verificación de un paso
     static subVerificacion(description){
-        const text = `SubVerificacion - ${description}`;
+        const text = `SubVerification - ${description}`;
+        cy.log(text);    //logueamos en cypress
+        cy.allure().step(text);  //loguemos en reporte de pruebas
+    }
+
+    static postCondition(description){
+        const text = `POSTCONDITION - ${description}`;
         cy.log(text);    //logueamos en cypress
         cy.allure().step(text);  //loguemos en reporte de pruebas
     }

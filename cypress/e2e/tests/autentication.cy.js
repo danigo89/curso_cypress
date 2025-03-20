@@ -31,6 +31,8 @@ describe(CommonPageData.testSuites.autentication, ()=>{
         Logger.verification('Verificar que se redirige al usuario a la página de inicio.');
         CommonPageMethods.verifySignedUser(existingUser);
         
+        Logger.postCondition('Log out');
+        CommonPageMethods.logout();
     })
 
     it('Inicio de sesión inválido',()=>{
