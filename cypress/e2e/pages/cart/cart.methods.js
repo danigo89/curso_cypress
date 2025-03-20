@@ -10,7 +10,7 @@ export class CartMethods{
     }
 
     static verifyCartPageIsShow(){
-        cy.url().should('inlcude', 'cart.html');
+        cy.url().should('include', 'cart.html');
     }
 
     static clickOnPlaceOrderButton(){

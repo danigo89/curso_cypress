@@ -6,7 +6,7 @@ export class ThankYouForYouPurchaseMethods{
     }
 
     static verifyGreenCheckMarkIsDisplayed(){
-        ThankYouForYouPurchaseElements.icons.greenCheckMark.should('exist');
+        ThankYouForYouPurchaseElements.icons.greenCheckMark().should('exist');
     }
 
 }

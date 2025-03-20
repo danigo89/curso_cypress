@@ -22,6 +22,6 @@ export class HomeMethod{
     }
 
     static verifyHomePageIsShow(){
-        cy.url().should('inlcude', 'index.html');
+        cy.url().should('include', 'index.html');
     }
 }
