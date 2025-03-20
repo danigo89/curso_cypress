@@ -2,6 +2,7 @@ import { ThankYouForYouPurchaseElements } from "./thank-you-for-you-purchase.ele
 
 export class ThankYouForYouPurchaseMethods{
     static clickOnOkButton(){
+        cy.wait(1000);
         ThankYouForYouPurchaseElements.buttons.ok.click();
     }
 

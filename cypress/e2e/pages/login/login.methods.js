@@ -13,6 +13,7 @@ export class LoginMethods{
 
     static clickOnLoginButton(){
         LoginElements.buttons.login.click();
+        cy.wait(1500);
     }
 
     static login(username, password){

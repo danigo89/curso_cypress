@@ -26,8 +26,6 @@ describe(CommonPageData.testSuites.autentication, ()=>{
         Logger.stepNumber(4);
         Logger.step('Hacer clic en "Log in" para iniciar sesión.');
         LoginMethods.clickOnLoginButton();
-
-        cy.wait(2000)
         Logger.verification('Verificar que se redirige al usuario a la página de inicio.');
         CommonPageMethods.verifySignedUser(existingUser);
         
@@ -52,8 +50,6 @@ describe(CommonPageData.testSuites.autentication, ()=>{
         Logger.stepNumber(4);
         Logger.step('Hacer clic en "Log in" para iniciar sesión.');
         LoginMethods.clickOnLoginButton();
-
-        cy.wait(2000)
         Logger.verification('Verificar que se muestra un mensaje de error indicando que el inicio de sesión ha fallado.');
         LoginMethods.verifyWrongPasswordMessage();
     })

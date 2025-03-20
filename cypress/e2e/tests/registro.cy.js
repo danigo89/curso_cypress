@@ -28,7 +28,6 @@ describe(CommonPageData.testSuites.registro, ()=>{
         Logger.stepNumber(4);
         Logger.step('Hacer clic en "Sign up" para registrar el usuario.');
         SignupMethods.clickOnSignupButton();
-        cy.wait(2000)
         Logger.verification('Verificar que se muestre el mensaje "Sign up successful".');
         SignupMethods.verifySignupSuccessfulMessageIsDisplayed();
 
@@ -52,7 +51,6 @@ describe(CommonPageData.testSuites.registro, ()=>{
         Logger.stepNumber(4);
         Logger.step('Hacer clic en "Sign up" para registrar el usuario.');
         SignupMethods.clickOnSignupButton();
-        cy.wait(2000)
         Logger.verification('Verificar que se muestra un mensaje de error indicando los campos inválidos.');
         SignupMethods.verifyThatThisUserAlreadyExistsMessageIsDisplayed();
 
