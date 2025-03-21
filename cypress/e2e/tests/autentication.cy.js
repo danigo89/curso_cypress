@@ -8,6 +8,10 @@ const existingUser = LoginData.validCredentials.username;
 const existingPassword = LoginData.validCredentials.password;
 const invalidPassword = LoginData.invalidCredentials.password;
 
+BeforeUnloadEvent(() =>{
+    CommonPageMethods.navigateToDemoBlaze();
+})
+
 describe(CommonPageData.testSuites.autentication, ()=>{
     it('Inicio de sesión válido',()=>{
         Logger.stepNumber(1);
